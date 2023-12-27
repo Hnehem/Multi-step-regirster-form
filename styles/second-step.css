@@ -1,0 +1,25 @@
+/* second step styles */
+
+/* .icon:hover {
+  transform: scale(2);
+} */
+
+/* .options {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+.option {
+  width: 100%;
+  color: #a1a1a9;
+  margin: 0.2rem 0;
+}
+
+.option p {
+  padding: 0.9rem;
+  font-size: 0.875rem;
+  border: 1px solid #a1a1a9;
+  border-radius: 10px;
+  background-color: #394150;
+}

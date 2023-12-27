@@ -1,3 +1,6 @@
+@import 'first-step.css'; 
+@import 'second-step.css'; 
+@import 'final-step.css';
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
@@ -49,35 +52,6 @@ h2 {
   border: 2px solid #394150;
   border-radius: 15px;
   color: #e5e7eb;
-}
-
-/* .form > 
-} */
-
-.input-div {
-  font-size: 0.7rem;
-  color: #a1a1a9;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.input-div > label {
-  margin-bottom: 0.25rem;
-}
-
-.input-div > input {
-  outline: none;
-  font-size: 0.75rem;
-  color: #a1a1a9;
-  padding: 1rem;
-  border: 2px solid #394150;
-  border-radius: 0.7rem;
-  background-color: #212936;
-}
-
-.input-div > input:focus {
-  border-color: #845eee;
 }
 
 .button {
@@ -144,54 +118,4 @@ h2 {
   z-index: -1;
 }
 
-/* .icon:hover {
-  transform: scale(2);
-} */
 
-/* second step styles */
-/* .options {
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-.option {
-  width: 100%;
-  color: #A1A1A9;
-  margin: 0.2rem 0;
-}
-
-.option p {
-  padding: 0.9rem;
-  font-size: 0.875rem;
-  border: 1px solid #A1A1A9;
-  border-radius: 10px;
-  background-color: #394150;
-}
-
-/* last step styles */
-
-.last {
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-
-.last p {
-  color: #A1A1A9;
-}
-
-.user {
-  margin-bottom: 2rem;
-}
-
-.user span, .user li {
-  color: #E5E7EB;
-}
-
-.topics ul {
-  padding: 0 1.5rem;
-}
-
-.topics li {
-  margin-bottom: 0.4rem;
-}
