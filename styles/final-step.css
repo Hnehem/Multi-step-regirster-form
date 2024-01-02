@@ -1,0 +1,29 @@
+/* last step styles */
+
+.last {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.last p {
+  color: #a1a1a9;
+  margin: 0.66rem 0;
+}
+
+.user {
+  margin-bottom: 2rem;
+}
+
+.user span,
+.topics li {
+  color: #e5e7eb;
+}
+
+.topics ul {
+  padding: 0 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.topics li {
+  margin-bottom: 0.4rem;
+}
