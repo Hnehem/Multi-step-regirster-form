@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi step register form</title>
+    <title>Multi Step Register Form</title>
 
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -12,18 +12,18 @@
 <body>
     <div id="wraper">
         <div id="container">
-            <!-- <form action="#" class="form">
+            <form id="form" action="#" class="form" autocomplete="off">
                 <h2>Register</h2>
                 <div class="input-div">
                     <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="enter your name" required>
+                    <input id="name" name="name" type="text" placeholder="enter your name">
                 </div>
                 <div class="input-div">
                     <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="example@gmail.com" required>
+                    <input id="email" name="email" type="email" placeholder="example@gmail.com">
                 </div>
-            </form> -->
-            <!-- <section class="section">
+            </form>
+            <section class="section">
                 <h2>Which topics you are interested in?</h2>
                 <div class="option">
                     <p>Software Development</p>
@@ -34,34 +34,27 @@
                 <div class="option">
                     <p>Graphic Design</p>
                 </div>
-            </section> -->
-            <section class="last">
+            </section>
+            <section class="section last">
                 <h2>Summary</h2>
                 <div class="user">
-                    <p>Name: <span>User Name</span></p>
-                    <p>Email: <span>user@gmail.com</span></p>
+                    
                 </div>
                 <div class="topics">
                     <p>Topics:</p>
-                    <ul>
-                        <li>Related topic 1</li>
-                        <li>Graphic Design</li>
-                    </ul>
                 </div>
             </section>
-            <button class="button">Continue</button>
+            <div class="warning"></div>
+            <button type="submit" class="button" form="form">Continue</button>
         </div>
         <div id="stepper">
-            <p>Step <span>1</span> of 3</p>
+            <p>Step <span class="counter"></span> of 3</p>
             <div class="icon-wraper">
                 <div class="step-icon">
-                    <div class="icon"></div>
                 </div>
                 <div class="step-icon">
-                    <div class="icon"></div>
                 </div>
                 <div class="step-icon">
-                    <div class="icon"></div>
                 </div>
             </div>
 

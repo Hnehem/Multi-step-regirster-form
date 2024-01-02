@@ -1,3 +1,8 @@
+@import 'first-step.css'; 
+@import 'second-step.css'; 
+@import 'final-step.css';
+@import 'warning.css';
+@import 'stepper.css';
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
@@ -10,8 +15,18 @@ body {
   min-height: 100vh;
   font-size: 16px;
   font-family: "Inter", sans-serif;
-  background: #121826;
   margin: 0;
+  background: #121826;
+  background-image: radial-gradient(
+      circle at 0% 0%,
+      hsla(261, 65%, 50%, 0.35) 0%,
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 94% 94%,
+      hsla(257, 57%, 31%, 0.35) 0%,
+      transparent 25%
+    );
 }
 
 h2 {
@@ -26,21 +41,10 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: radial-gradient(
-      circle at 0% 0%,
-      hsla(261, 65%, 50%, 0.35) 0%,
-      hsla(222, 36%, 11%) 28%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 94% 94%,
-      hsla(257, 57%, 31%, 0.35) 0%,
-      hsla(222, 36%, 11%) 25%,
-      transparent 50%
-    );
 }
 
 #container {
+position: relative;
   width: 29rem;
   display: flex;
   flex-direction: column;
@@ -51,46 +55,18 @@ h2 {
   color: #e5e7eb;
 }
 
-/* .form > 
-} */
-
-.input-div {
-  font-size: 0.7rem;
-  color: #a1a1a9;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.input-div > label {
-  margin-bottom: 0.25rem;
-}
-
-.input-div > input {
-  outline: none;
-  font-size: 0.75rem;
-  color: #a1a1a9;
-  padding: 1rem;
-  border: 2px solid #394150;
-  border-radius: 0.7rem;
-  background-color: #212936;
-}
-
-.input-div > input:focus {
-  border-color: #845eee;
-}
-
 .button {
   align-self: center;
   width: fit-content;
   font-size: 0.875rem;
   padding: 0.7rem 2.2rem;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   outline: none;
   color: #e5e7eb;
-  background: linear-gradient(180deg, #845eee, #652cd1);
+  background: linear-gradient(180deg, #845eee 20%, #652cd1);
   border: none;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -100,98 +76,3 @@ h2 {
   transform: scale(1.1);
 }
 
-#stepper {
-  width: 30rem;
-  display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-  justify-content: center;
-  color: #394150;
-  font-size: 0.75rem;
-  position: relative;
-}
-
-#stepper p {
-  position: absolute;
-  top: 16%;
-  left: 26%;
-}
-
-.icon-wraper {
-  width: 13%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1.2rem;
-}
-
-.step-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
-  background-color: #845eee;
-  z-index: 1;
-}
-
-.icon {
-  width: 0.6rem;
-  height: 0.6rem;
-  background-color: #845eee6f;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-/* .icon:hover {
-  transform: scale(2);
-} */
-
-/* second step styles */
-/* .options {
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-.option {
-  width: 100%;
-  color: #A1A1A9;
-  margin: 0.2rem 0;
-}
-
-.option p {
-  padding: 0.9rem;
-  font-size: 0.875rem;
-  border: 1px solid #A1A1A9;
-  border-radius: 10px;
-  background-color: #394150;
-}
-
-/* last step styles */
-
-.last {
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-
-.last p {
-  color: #A1A1A9;
-}
-
-.user {
-  margin-bottom: 2rem;
-}
-
-.user span, .user li {
-  color: #E5E7EB;
-}
-
-.topics ul {
-  padding: 0 1.5rem;
-}
-
-.topics li {
-  margin-bottom: 0.4rem;
-}

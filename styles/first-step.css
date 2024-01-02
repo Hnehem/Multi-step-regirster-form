@@ -1,0 +1,28 @@
+/* first step styles */
+
+.input-div {
+  font-size: 0.7rem;
+  color: #a1a1a9;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-div > label {
+  margin-bottom: 0.25rem;
+}
+
+.input-div > input {
+  outline: none;
+  font-size: 0.75rem;
+  color: #a1a1a9;
+  padding: 1rem;
+  border: 2px solid #394150;
+  border-radius: 0.7rem;
+  background-color: #212936;
+}
+
+.input-div > input:focus {
+  border-color: #845eee;
+}
+

@@ -1,0 +1,9 @@
+.warning {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 75%;
+    color: lightcoral;
+    text-align: center;
+    font-size: 0.65rem;
+}
