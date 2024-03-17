@@ -79,7 +79,8 @@ function buttonClick() {
     stepper();
   } else if (counter == 3) {
     alert("✅ Success");
-    counter == 0;
+    // counter == 0;
+    location.reload()
   }
 }
 
